@@ -53,6 +53,9 @@ const styles = StyleSheet.create({
     borderRadius: 16,
   },
   photoBtn: {
+    flex: 1,
+    alignItems: "center",
+    // justifyContent: "center",
     position: "absolute",
     top: 21,
     left: 235,
@@ -61,12 +64,11 @@ const styles = StyleSheet.create({
     height: 25,
     borderWidth: 1,
     borderColor: "#FF6C00",
-    borderRadius: 50,
+    borderRadius: 25,
     backgroundColor: "#FFFFFF",
   },
   photoBtnText: {
     color: "#FF6C00",
-    textAlign: "center",
   },
   title: {
     fontWeight: 500,
