@@ -7,7 +7,7 @@ const App = () => {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require("./assets/images/bg-img.jpg")}
+        source={require("./assets/images/bg-img.png")}
         style={styles.image}
       >
         <RegistrationScreen />
@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
   image: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "flex-end",
     resizeMode: "cover",
   },
 });
