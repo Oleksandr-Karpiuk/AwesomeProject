@@ -1,9 +1,17 @@
 // import React, { useCallback } from "react";
-import { ImageBackground, StyleSheet, Text, View } from "react-native";
+import { ImageBackground, StyleSheet, View } from "react-native";
 import RegistrationScreen from "./Screens/RegistrationScreen";
-// import { useFonts } from "expo-font";
+import { useFonts, Roboto } from "@expo-google-fonts/roboto";
 
 const App = () => {
+  let [fontsLoaded] = useFonts({
+    Roboto,
+  });
+
+  // if (!fontsLoaded) {
+  //   return null;
+  // }
+
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -19,6 +27,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    fontFamily: "Roboto",
   },
   image: {
     flex: 1,

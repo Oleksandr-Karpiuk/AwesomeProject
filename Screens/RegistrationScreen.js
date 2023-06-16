@@ -5,11 +5,14 @@ import {
   TextInput,
   TouchableOpacity,
   View,
+  Image,
 } from "react-native";
 
 const RegistrationScreen = () => (
   <View style={styles.container}>
-    <View style={styles.photoContainer}></View>
+    <View style={styles.photoContainer}>
+      <Image />
+    </View>
     <TouchableOpacity activeOpacity={0.8} style={styles.photoBtn}>
       <Text style={styles.photoBtnText}>&#10011;</Text>
     </TouchableOpacity>
@@ -55,7 +58,7 @@ const styles = StyleSheet.create({
   photoBtn: {
     flex: 1,
     alignItems: "center",
-    // justifyContent: "center",
+    justifyContent: "center",
     position: "absolute",
     top: 21,
     left: 235,
